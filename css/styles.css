@@ -10,7 +10,7 @@
 * {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
-  font-size: 15px;
+  font-size: 14px;
   color: white;
   padding: 0;
   margin: 0;
@@ -317,7 +317,7 @@ footer {
 }
 
 .about-me i {
-  margin: 0 60px;
+  margin: 0 50px;
 }
 
 .bootcamp i {
@@ -327,7 +327,7 @@ footer {
 .heart-div {
   position: relative;
   height: 50px;
-  width: 300px;
+  width: 280px;
   margin: 0 auto 10px auto;
 }
 .heart i {
