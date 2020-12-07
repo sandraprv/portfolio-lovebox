@@ -10,7 +10,7 @@
 * {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
   padding: 0;
   margin: 0;
@@ -317,17 +317,17 @@ footer {
 }
 
 .about-me i {
-  margin: 0 65px;
+  margin: 0 60px;
 }
 
 .bootcamp i {
-  margin: 0 30px;
+  margin: 0 20px;
 }
 
 .heart-div {
   position: relative;
-  height: 60px;
-  width: 350px;
+  height: 50px;
+  width: 300px;
   margin: 0 auto 10px auto;
 }
 .heart i {
@@ -344,7 +344,7 @@ footer {
   top: 0px;
 }
 #heart3 {
-  left: 120px;
+  left: 100px;
   top: 0px;
 }
 #heart4 {
@@ -357,7 +357,7 @@ footer {
   top: 0px;
 }
 #heart6 {
-  right: 120px;
+  right: 100px;
   top: 0px;
 }
 
