@@ -10,7 +10,7 @@
 * {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
-  font-size: 14px;
+  font-size: 12px;
   color: white;
   padding: 0;
   margin: 0;
@@ -19,8 +19,8 @@
 
 body {
   background-color: white;
-  position: relative;
   width: 100vw;
+  position: relative;
 }
 
 section {
@@ -33,6 +33,7 @@ section {
   cursor: pointer;
   margin: 0;
   color: white;
+  font-weight: 100;
 }
 
 .sectionTitle:hover {
@@ -48,20 +49,17 @@ button {
   cursor: pointer;
 }
 
+
 /* ----- SECTION : NAV BAR ----- */
 nav {
   position: sticky;
   top: 0;
   width: 100%;
   padding: 1rem;
-  z-index: 5;
+  z-index: 10;
 }
 
 nav a {
-  text-decoration: none;
-  color: var(--dark-pink);
-  font-weight: 400;
-  cursor: pointer;
   position: absolute;
   right: 1rem;
 }
@@ -88,19 +86,101 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 500px;
+}
+
+#mountain-bg {
+  position: absolute;
+  left: -40px;
+  height: 500px;
+  opacity: 0.3;
 }
 
 .home h1 {
+  z-index: 9;
+  position: absolute;
+  margin-top: -3rem;
   font-size: 2rem;
   font-weight: 700;
   color: red;
 }
 
 .home h5 {
+  z-index: 8;
+  position: absolute;
+  margin-top: 3rem;
   font-weight: 400;
   color: red;
 }
+
+#heart {
+  position: relative;
+  width: 100px;
+  height: 200px;
+  animation: heartbeat 1s infinite;
+  margin: 0 auto;
+  z-index: 7;
+}
+
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 100px;
+  height: 190px;
+  background: var(--light-pink);
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+#heart:after {
+  left: -50px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* heart animation from https://codepen.io/Qanser/pen/pwzgyW */
+
 /* ----- SECTION : ABOUT ME ----- */
 
 .about-me {
@@ -120,6 +200,7 @@ nav a:hover {
 
 .carousel-item h2 {
   margin-top: 2rem;
+  font-size: 1.3rem;
 }
 
 /* ----- SECTION : BOOTCAMP ----- */
@@ -128,19 +209,19 @@ nav a:hover {
   background-color: var(--main-pink);
 }
 
-.bootcamp p {
-  margin: 0;
-}
-
 #bootcamp-div {
   width: 90vw;
   margin: auto;
+  text-align: center;
+  padding: 2rem;
 }
 
-#bootcamp-div div {
-  margin: 2rem auto;
-  width: 80vw;
-  text-align: center;  
+#details-bootcamp {
+  height: 200px;
+  border-radius: 5px;
+  width: 350px;
+  margin: 0 auto auto 2rem;
+  text-align: center;
 }
 
 #img-bootcamp img {
@@ -150,9 +231,17 @@ nav a:hover {
 }
 
 #details-bootcamp p {
-  padding-bottom: 1.5rem;
+  color: white;
+  margin: auto;
+  padding: 1rem;
+  font-weight: 400;
 }
 
+#details-bootcamp a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--dark-pink);
+}
 
 /* ----- SECTION : PORTFOLIO ----- */
 
@@ -192,7 +281,6 @@ nav a:hover {
   position: relative;
 }
 
-
 .portfolio-btn-overlay {
   background-color: white;
   opacity: 0.6;
@@ -203,15 +291,14 @@ nav a:hover {
   overflow: hidden;
   width: 100%;
   height: 0;
-  transition: .5s ease;
-
+  transition: 0.5s ease;
 }
 
 .portfolio-btn:hover .portfolio-btn-overlay {
   height: 100%;
 }
 
-.portfolio-btn-overlay i{
+.portfolio-btn-overlay i {
   color: var(--main-pink);
   font-size: 5rem;
   position: absolute;
@@ -305,10 +392,6 @@ nav a:hover {
   margin: 0.3rem;
 }
 
-
-
-
-
 /* ----- SECTION : FAQ ----- */
 
 .FAQ {
@@ -316,7 +399,7 @@ nav a:hover {
 }
 
 #accordion-container {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .dividers {
@@ -326,18 +409,16 @@ nav a:hover {
 }
 
 .accordion {
-    width: 100%;
+  width: 100%;
   font-weight: 400;
   background-color: var(--main-pink);
 }
-
 
 .panel {
   display: none;
   margin: 0;
   padding: 1rem;
 }
-
 
 .is-visible {
   display: block;
@@ -351,17 +432,21 @@ nav a:hover {
 
 .contact {
   background-color: var(--dark-pink);
-  height: 200px;
   text-align: center;
   padding-top: 1rem;
+  height: 200px;
 }
 
 .contact h2 {
-  margin-top: 1rem;
+  margin: 1rem auto;
 }
 
 .contact a {
   color: white;
+}
+
+.contact li {
+  padding: 0.2rem;
 }
 
 .contact a:hover {
@@ -383,6 +468,7 @@ footer {
 }
 
 /* ----- SECTION : HEART ----- */
+
 .fa-heart {
   color: red;
   margin: 0 10px;
@@ -421,7 +507,7 @@ footer {
 }
 #heart4 {
   bottom: 0;
- left: 49%;
+  left: 49%;
 }
 
 #heart5 {
@@ -434,29 +520,23 @@ footer {
 }
 
 #heart7 {
- right: 0;
+  right: 0;
   bottom: 0;
 }
 
-
-@media only screen and (min-width: 800px) {
-
-#bootcamp-div  {
-  display: flex;
-  max-width: 800px;
+@media only screen and (min-width: 700px) {
+  * {
+    font-size: 14px;
   }
 
+  #bootcamp-div2 {
+    display: flex;
+    max-width: 800px;
+    height: 300px;
+  }
 
-#details-bootcamp {
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#details-bootcamp p {
-  margin: 1rem;
-}
-
-
+  #details-bootcamp {
+    display: flex;
+    justify-content: center;
+  }
 }
