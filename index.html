@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <link rel="stylesheet" href="./css/styles.css" />
@@ -33,7 +33,9 @@
   </head>
   <body>
     <nav>
-        <a href="" id="hireNow">Recrutez-moi !</a>
+      <a href="" id="hireNow">
+        Recrutez-moi ! <i style="color: white" class="fas fa-heart"></i>
+      </a>
     </nav>
     <main>
       <section class="home">
@@ -43,56 +45,56 @@
 
       <section class="heart">
         <div class="heart-div">
-<i id="heart1" class="fas fa-heart"></i>
-<i id="heart2" class="fas fa-heart"></i>
-<i id="heart3" class="fas fa-heart"></i>
-<i id="heart4" class="fas fa-heart"></i>
-<i id="heart5" class="fas fa-heart"></i>
-<i id="heart6" class="fas fa-heart"></i>
-<i id="heart7" class="fas fa-heart"></i>
+          <i id="heart1" class="fas fa-heart"></i>
+          <i id="heart2" class="fas fa-heart"></i>
+          <i id="heart3" class="fas fa-heart"></i>
+          <i id="heart4" class="fas fa-heart"></i>
+          <i id="heart5" class="fas fa-heart"></i>
+          <i id="heart6" class="fas fa-heart"></i>
+          <i id="heart7" class="fas fa-heart"></i>
         </div>
       </section>
 
       <section class="about-me">
-        <h2 class="sectionTitle"> <i class="fas fa-heart"></i>Bonjour !<i class="fas fa-heart"></i></h2>
-        <div id="mycarousel" class="carousel slide" data-ride="carousel" style="display: none;">
+        <h2 class="sectionTitle">
+          <i class="fas fa-heart"></i>Bonjour !<i class="fas fa-heart"></i>
+        </h2>
+        <div
+          id="mycarousel"
+          class="carousel slide"
+          data-ride="carousel"
+          style="display: none"
+        >
           <ol class="carousel-indicators">
             <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
             <li data-target="#mycarousel" data-slide-to="1"></li>
             <li data-target="#mycarousel" data-slide-to="2"></li>
-            <li data-target="#mycarousel" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <h2>Sandra</h2>
+              <h2>Qui suis-je ? 👩‍💻</h2>
               <p>
-                2§ ans, grenoble. Autodidacte. Je recherche une opportunité
-                professionnelle pour évoluer en tant que web dev.
+                Je m'appelle Sandra, j'ai 26ans et j'habite à Grenoble. <br />
+                Je suis autodidacte en web dev. <br />
+                Je recherche une opportunité pour évoluer en tant que web dev
+                fullstack.
               </p>
-              <a href="">En savoir plus</a>
             </div>
             <div class="carousel-item">
-              <h2>Full stack Web Dev 2020 Bootcamp</h2>
+              <h2>Full stack web dev Bootcamp 🚀</h2>
               <p>
                 Pour cadrer mon apprentissage, j'ai réalisé le Bootcamp proposé
                 par Angela Yu sur Udemy.
               </p>
-              <a href="">En savoir plus</a>
             </div>
             <div class="carousel-item">
-              <h2>Front end challenges !</h2>
+              <h2>Front end challenges !💡</h2>
               <p>
                 Au quotidien : challenges, progrès et entraide avec la
-                communauté <a href="www.frontendmentor.io">Frontend Mentor</a>.
-              </p>
-              <a href="">En savoir plus</a>
-            </div>
-
-            <div class="carousel-item">
-              <h2>Stack</h2>
-              <p>
-                HTML5, CSS, bootstrap, JavaScript, jQuery, Node.js, express,
-                MongoDB, React ...
+                communauté
+                <a style="color: white" href="www.frontendmentor.io"
+                  >Frontend Mentor</a
+                >.
               </p>
             </div>
           </div>
@@ -118,31 +120,43 @@
       </section>
 
       <section class="bootcamp">
-        <h2 class="sectionTitle"> <i class="fas fa-heart"></i>Bootcamp<i class="fas fa-heart"></i></h2>
+        <h2 class="sectionTitle">
+          <i class="fas fa-heart"></i>Bootcamp<i class="fas fa-heart"></i>
+        </h2>
         <div id="bootcamp-div" style="display: none">
-          <p>
-            Front-End Web Development HTML 5 CSS 3 Bootstrap 4 Javascript ES6
-            DOM Manipulation jQuery Bash Command Line Git, GitHub and Version
-            Control Backend Web Development Node.js NPM Express.js EJS REST APIs
-            Databases SQL MongoDB Mongoose Authentication Firebase React.js
-            React Hooks Web Design Deployment with GitHub Pages, Heroku and
-            MongoDB Atlas
-          </p>
+          <div id="img-bootcamp">
+            <img src="./images/Udemy Web Thumb.png" alt="" />
+          </div>
+          <div id="details-bootcamp">
+            <p>
+              <a
+                style="color: white"
+                href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+                >"The Complete 2020 Web Development Bootcamp"</a
+              >
+              est un bootcamp dispensé par Angela Yu. J'y ai découvert HTML,
+              CSS, Javascript, Node, React, MongoDB... à travers de nombreux
+              projets.
+            </p>
+          </div>
         </div>
       </section>
 
       <section class="portfolio">
         <div id="overlay" onclick="off()"></div>
 
-        <h2 class="sectionTitle"> <i class="fas fa-heart"></i>Portfolio<i class="fas fa-heart"></i></h2>
-        <div class="portfolio-div" style="display: none">
+        <h2 class="sectionTitle">
+          <i class="fas fa-heart"></i>Portfolio<i class="fas fa-heart"></i>
+        </h2>
+        <div class="portfolio-div" style="display: none;">
           <div class="portfolio-div2">
             <div class="portfolio-container">
-              <button
-                id="0"
-                class="portfolio-btn tindog"
-                data-modal="modal0"
-              ></button>
+              <button id="0" class="portfolio-btn tindog" data-modal="modal0">
+                <div class="portfolio-btn-overlay">
+                  <i class="fas fa-plus"></i>
+                </div>
+              </button>
+
               <div class="modal" id="modal0">
                 <div class="modal-header">
                   <h3>Tindog</h3>
@@ -192,259 +206,353 @@
               </div>
             </div>
 
-          <div class="portfolio-container">
-            <button
-              class="portfolio-btn comingSoon"
-              data-modal="modal1"
-            ></button>
-            <div class="modal" id="modal1">
-              <div class="modal-header">
-                <h3>Coming soon</h3>
-                <span class="close">x</span>
-              </div>
+            <div class="portfolio-container">
+              <button class="portfolio-btn comingSoon" data-modal="modal1">
+                <div class="portfolio-btn-overlay">
+                  <h5 class="text"><i class="fas fa-plus"></i></h5>
+                </div>
+              </button>
+              <div class="modal" id="modal1">
+                <div class="modal-header">
+                  <h3>Coming soon</h3>
+                  <span class="close">x</span>
+                </div>
 
-              <p>
-                Coming soon page, avec verification de l'adresse email. Coming
-                soon page, avec verification de l'adresse email.
-              </p>
-              <div class="cta-div">
-                <a
-                  href="https://comingsoonpage.vercel.app/"
-                  target="_blank"
-                  title="lien vers vercel"
-                  >Voir le site</a
-                >
-                <a
-                  href="https://github.com/sandraprv/comingsoonpage.git"
-                  target="_blank"
-                  title="lien vers github"
-                  >Voir le code</a
-                >
-              </div>
+                <p>
+                  Coming soon page, avec verification de l'adresse email. Coming
+                  soon page, avec verification de l'adresse email.
+                </p>
+                <div class="cta-div">
+                  <a
+                    href="https://comingsoonpage.vercel.app/"
+                    target="_blank"
+                    title="lien vers vercel"
+                    >Voir le site</a
+                  >
+                  <a
+                    href="https://github.com/sandraprv/comingsoonpage.git"
+                    target="_blank"
+                    title="lien vers github"
+                    >Voir le code</a
+                  >
+                </div>
 
-              <div class="stack-icon-div">
-                <img
-                  class="stack-icon"
-                  src="./images/stack-icon/html.png"
-                  alt=""
-                  title="html5"
-                />
-                <img
-                  class="stack-icon"
-                  src="./images/stack-icon/css.png"
-                  alt=""
-                  title="css3"
-                />
-                <img
-                  class="stack-icon"
-                  src="./images/stack-icon/js.png"
-                  alt=""
-                  title="JavaScript"
-                />
+                <div class="stack-icon-div">
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/html.png"
+                    alt=""
+                    title="html5"
+                  />
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/css.png"
+                    alt=""
+                    title="css3"
+                  />
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/js.png"
+                    alt=""
+                    title="JavaScript"
+                  />
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="portfolio-container">
-            <button
-              class="portfolio-btn dashboard"
-              data-modal="modal2"
-            ></button>
-            <div class="modal" id="modal2">
-              <div class="modal-header">
-                <h3>Dashboard</h3>
-                <span class="close">x</span>
-              </div>
+            <div class="portfolio-container">
+              <button class="portfolio-btn dashboard" data-modal="modal2">
+                <div class="portfolio-btn-overlay">
+                  <h5 class="text"><i class="fas fa-plus"></i></h5>
+                </div>
+              </button>
+              <div class="modal" id="modal2">
+                <div class="modal-header">
+                  <h3>Dashboard</h3>
+                  <span class="close">x</span>
+                </div>
 
-              <p>
-                Tableau de bord de réseaux sociaux, avec dark mode.
-                <i class="fas fa-heart"></i>
-              </p>
-              <div class="cta-div">
-                <a
-                  href="https://socialmediadashboard-fawn.vercel.app/"
-                  target="_blank"
-                  title="lien vers vercel"
-                  >Voir le site</a
-                >
-                <a
-                  href="https://github.com/sandraprv/socialmediadashboard.git"
-                  target="_blank"
-                  title="lien vers github"
-                  >Voir le code</a
-                >
-              </div>
+                <p>
+                  Tableau de bord de réseaux sociaux, avec dark mode.
+                  <i class="fas fa-heart"></i>
+                </p>
+                <div class="cta-div">
+                  <a
+                    href="https://socialmediadashboard-fawn.vercel.app/"
+                    target="_blank"
+                    title="lien vers vercel"
+                    >Voir le site</a
+                  >
+                  <a
+                    href="https://github.com/sandraprv/socialmediadashboard.git"
+                    target="_blank"
+                    title="lien vers github"
+                    >Voir le code</a
+                  >
+                </div>
 
-              <div class="stack-icon-div">
-                <img
-                  class="stack-icon"
-                  src="./images/stack-icon/html.png"
-                  alt=""
-                  title="html5"
-                />
-                <img
-                  class="stack-icon"
-                  src="./images/stack-icon/css.png"
-                  alt=""
-                  title="css3"
-                />
-                <img
-                  class="stack-icon"
-                  src="./images/stack-icon/js.png"
-                  alt=""
-                  title="JavaScript"
-                />
-                <img
-                  class="stack-icon"
-                  src="./images/stack-icon/bootstrap.png"
-                  alt=""
-                  title="Bootstrap"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-container">
-            <button
-              class="portfolio-btn price-cards"
-              data-modal="modal3"
-            ></button>
-            <div class="modal" id="modal3">
-              <div class="modal-header">
-                <h3>Price cards</h3>
-                <span class="close">x</span>
-              </div>
-
-              <p>
-                Carte de présentation de tarifs avec évolution du prix
-                mensuel/annuel.
-              </p>
-              <div class="cta-div">
-                <a
-                  href="https://pricecardstoggle.vercel.app/"
-                  target="_blank"
-                  title="lien vers vercel"
-                  >Voir le site</a
-                >
-                <a
-                  href="https://github.com/sandraprv/pricecardstoggle.git"
-                  target="_blank"
-                  title="lien vers github"
-                  >Voir le code</a
-                >
-              </div>
-
-              <div class="stack-icon-div">
-                <img
-                  class="stack-icon"
-                  src="./images/stack-icon/html.png"
-                  alt=""
-                  title="html5"
-                />
-                <img
-                  class="stack-icon"
-                  src="./images/stack-icon/css.png"
-                  alt=""
-                  title="css3"
-                />
-                <img
-                  class="stack-icon"
-                  src="./images/stack-icon/js.png"
-                  alt=""
-                  title="JavaScript"
-                />
+                <div class="stack-icon-div">
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/html.png"
+                    alt=""
+                    title="html5"
+                  />
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/css.png"
+                    alt=""
+                    title="css3"
+                  />
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/js.png"
+                    alt=""
+                    title="JavaScript"
+                  />
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/bootstrap.png"
+                    alt=""
+                    title="Bootstrap"
+                  />
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="portfolio-container">
-            <button
-              class="portfolio-btn sign-up-form"
-              data-modal="modal4"
-            ></button>
-            <div class="modal" id="modal4">
-              <div class="modal-header">
-                <h3>Price cards</h3>
-                <span class="close">x</span>
-              </div>
+            <div class="portfolio-container">
+              <button class="portfolio-btn price-cards" data-modal="modal3">
+                <div class="portfolio-btn-overlay">
+                  <h5 class="text"><i class="fas fa-plus"></i></h5>
+                </div>
+              </button>
+              <div class="modal" id="modal3">
+                <div class="modal-header">
+                  <h3>Price cards</h3>
+                  <span class="close">x</span>
+                </div>
 
-              <p>Sign up form</p>
-              <div class="cta-div">
-                <a
-                  href="https://signupformchallenge.vercel.app/"
-                  target="_blank"
-                  title="lien vers vercel"
-                  >Voir le site</a
-                >
-                <a
-                  href="https://github.com/sandraprv/signupformchallenge"
-                  target="_blank"
-                  title="lien vers github"
-                  >Voir le code</a
-                >
-              </div>
+                <p>
+                  Carte de présentation de tarifs avec évolution du prix
+                  mensuel/annuel.
+                </p>
+                <div class="cta-div">
+                  <a
+                    href="https://pricecardstoggle.vercel.app/"
+                    target="_blank"
+                    title="lien vers vercel"
+                    >Voir le site</a
+                  >
+                  <a
+                    href="https://github.com/sandraprv/pricecardstoggle.git"
+                    target="_blank"
+                    title="lien vers github"
+                    >Voir le code</a
+                  >
+                </div>
 
-              <div class="stack-icon-div">
-                <img
-                  class="stack-icon"
-                  src="./images/stack-icon/html.png"
-                  alt=""
-                  title="html5"
-                />
-                <img
-                  class="stack-icon"
-                  src="./images/stack-icon/css.png"
-                  alt=""
-                  title="css3"
-                />
-                <img
-                  class="stack-icon"
-                  src="./images/stack-icon/js.png"
-                  alt=""
-                  title="JavaScript"
-                />
+                <div class="stack-icon-div">
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/html.png"
+                    alt=""
+                    title="html5"
+                  />
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/css.png"
+                    alt=""
+                    title="css3"
+                  />
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/js.png"
+                    alt=""
+                    title="JavaScript"
+                  />
+                </div>
               </div>
             </div>
+
+            <div class="portfolio-container">
+              <button class="portfolio-btn sign-up-form" data-modal="modal4">
+                <div class="portfolio-btn-overlay">
+                  <h5 class="text"><i class="fas fa-plus"></i></h5>
+                </div>
+              </button>
+              <div class="modal" id="modal4">
+                <div class="modal-header">
+                  <h3>Price cards</h3>
+                  <span class="close">x</span>
+                </div>
+
+                <p>Sign up form</p>
+                <div class="cta-div">
+                  <a
+                    href="https://signupformchallenge.vercel.app/"
+                    target="_blank"
+                    title="lien vers vercel"
+                    >Voir le site</a
+                  >
+                  <a
+                    href="https://github.com/sandraprv/signupformchallenge"
+                    target="_blank"
+                    title="lien vers github"
+                    >Voir le code</a
+                  >
+                </div>
+
+                <div class="stack-icon-div">
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/html.png"
+                    alt=""
+                    title="html5"
+                  />
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/css.png"
+                    alt=""
+                    title="css3"
+                  />
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/js.png"
+                    alt=""
+                    title="JavaScript"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-container">
+              <button class="portfolio-btn sign-up-form" data-modal="modal5">
+                <div class="portfolio-btn-overlay">
+                  <h5 class="text"><i class="fas fa-plus"></i></h5>
+                </div>
+              </button>
+              <div class="modal" id="modal5">
+                <div class="modal-header">
+                  <h3>To do list</h3>
+                  <span class="close">x</span>
+                </div>
+
+                <p>To do list avec React</p>
+                <div class="cta-div">
+                  <a
+                    href="https://codesandbox.io/s/keeper-part-3-starting-forked-8xbbk?fontsize=14&hidenavigation=1&theme=dark">
+                    target="_blank"
+                    title="lien vers codesandbox"
+                    >Voir sur codesandbox</a
+                  >
+            
+                </div>
+
+                <div class="stack-icon-div">
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/html.png"
+                    alt=""
+                    title="html5"
+                  />
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/css.png"
+                    alt=""
+                    title="css3"
+                  />
+                  <img
+                    class="stack-icon"
+                    src="./images/stack-icon/js.png"
+                    alt=""
+                    title="JavaScript"
+                  />
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </section>
 
       <section class="FAQ">
-       <h2 class="sectionTitle"> <i class="fas fa-heart"></i>FAQ<i class="fas fa-heart"></i></h2>
-        <div id="accordion-container" style="display: none;">
+        <h2 class="sectionTitle">
+          <i class="fas fa-heart"></i>FAQ<i class="fas fa-heart"></i>
+        </h2>
+        <div id="accordion-container" style="display: none">
+          <div class="dividers">
+            <button class="accordion">Quel est mon parcours ?</button>
+            <p class="panel">
+              J'ai un parcours universitaire orienté sciences commerciales, que
+              j'ai complété par un master spécialisé en Management des Achats.
+              En 2018, après avoir validé mon diplôme je suis partie 2ans pour
+              une folle aventure autour en Australie. J'ai commencé à apprendre
+              à coder il y a quelques mois seulement, en autodidacte.
+            </p>
+          </div>
+
           <div class="dividers">
             <button class="accordion">
-              Who are you ? <i class="fas fa-angle-up"></i>
+              Qu'est ce que j'<i class="fas fa-heart"></i> dans le web dev ?
             </button>
             <p class="panel">I am Sandra</p>
           </div>
 
           <div class="dividers">
-            <button class="accordion">
-              Who are you ? <i class="fas fa-angle-up"></i>
-            </button>
-            <p class="panel">I am Sandra</p>
+            <button class="accordion">Pourquoi Lovebox ?</button>
+            <div class="panel">
+              <ul>
+                <li>
+                  <i class="fas fa-heart"></i> Une opportunité d'évoluer sur du
+                  full stack
+                </li>
+                <li>
+                  <i class="fas fa-heart"></i> Une équipe à Grenoble et à
+                  l'international
+                </li>
+                <li><i class="fas fa-heart"></i> Un coup de coeur</li>
+              </ul>
+            </div>
           </div>
 
           <div class="dividers">
             <button class="accordion">
-              Who are you ? <i class="fas fa-angle-up"></i>
+              Ai-je peur des araignées et du noir ?
+              <i style="color: black" class="fas fa-spider"></i>
             </button>
-            <p class="panel">I am Sandra</p>
+            <p class="panel">
+              Alors, c'est là où mon âme d'aventurière va faire la différence.
+              Je viens de passer les deux dernières années en Australie, à
+              dormir dans mon 4x4 au milieu du désert. J'ai donc eu
+              l'opportunité de côtoyer ariagnées mortelles, crocodiles, dingos,
+              requins, casoard, ...
+            </p>
           </div>
 
           <div class="dividers">
-            <button class="accordion">
-              Who are you ? <i class="fas fa-angle-up"></i>
-            </button>
-            <p class="panel">I am Sandra</p>
+            <button class="accordion">Alors, pourquoi moi ? 🙋‍♀️</button>
+            <p class="panel">
+              Malheureusement, je ne possède pas l'intégralité des
+              <a
+                style="color: white"
+                href="https://questionsdemploi.typepad.fr/questionsdemploi/72-qualit%C3%A9s-%C3%A0-mettre-en-avant-.html"
+                target="_blank"
+              >
+                206 qualités</a
+              >. Il me manque au moins la n°183. <br />
+              MAIS, en quelques mois j'ai pu prouver que j'adore passer mes
+              journée à créer, coder, apprendre ... J'ai complété un bootcamp
+              qui m'a permis de découvrir pas mal de technologies et puis je
+              prends plaisir tous les jours à m'exercer et apprendre.
+            </p>
           </div>
         </div>
       </section>
 
       <section class="contact">
         <i class="fas fa-heart"></i>
-        <h2>Envie d'échanger ?</h2>
+        <h2>Envie d'échanger ? 📲</h2>
         <ul>
           <li>06 30 39 49 61</li>
           <li>

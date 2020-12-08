@@ -1,6 +1,3 @@
-// ------ CAROUSEL ------ //
-
-
 // ------ PORTFOLIO ------ //
 
 var btns = document.querySelectorAll(".portfolio-btn");
@@ -41,7 +38,6 @@ function off() {
 // ----- SECTIONS ------ //
 
 const sectionsTitles = document.getElementsByClassName("sectionTitle");
-console.log(sectionsTitles);
 var x;
 
 for (x = 0; x < sectionsTitles.length; x++) {
@@ -65,6 +61,5 @@ for (i = 0; i < acc.length; i++) {
 
   acc[i].addEventListener("click", function() {
     this.nextElementSibling.classList.toggle("is-visible"); // p
-    this.lastChild.classList.toggle("upsidedown") // arrow
   });
 }
