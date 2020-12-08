@@ -91,9 +91,12 @@ nav a:hover {
 
 #mountain-bg {
   position: absolute;
-  left: -40px;
+  left: -10px;
+object-fit: cover;
   height: 500px;
+  width: 100vw;
   opacity: 0.3;
+
 }
 
 .home h1 {
@@ -412,7 +415,15 @@ nav a:hover {
   width: 100%;
   font-weight: 400;
   background-color: var(--main-pink);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  opacity: 1;
 }
+
+.accordion:hover {
+  opacity: 0.5;
+}
+
 
 .panel {
   display: none;
@@ -422,10 +433,6 @@ nav a:hover {
 
 .is-visible {
   display: block;
-}
-
-.fa-angle-up {
-  margin-left: 1rem;
 }
 
 /* ----- SECTION : CONTACT ----- */
@@ -484,8 +491,8 @@ footer {
 
 .heart-div {
   position: relative;
-  height: 50px;
-  width: 280px;
+  height: 40px;
+  width: 240px;
   margin: 0 auto 10px auto;
 }
 .heart i {
@@ -502,7 +509,7 @@ footer {
   top: 0px;
 }
 #heart3 {
-  left: 100px;
+  left: 90px;
   top: 0px;
 }
 #heart4 {
@@ -511,11 +518,11 @@ footer {
 }
 
 #heart5 {
-  right: 40px;
+  right: 80px;
   top: 0px;
 }
 #heart6 {
-  right: 100px;
+  right: 30px;
   top: 0px;
 }
 
@@ -528,6 +535,10 @@ footer {
   * {
     font-size: 14px;
   }
+
+  .heart-div {
+  width: 270px;
+}
 
   #bootcamp-div2 {
     display: flex;
