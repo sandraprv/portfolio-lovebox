@@ -49,7 +49,6 @@ button {
   cursor: pointer;
 }
 
-
 /* ----- SECTION : NAV BAR ----- */
 nav {
   position: sticky;
@@ -92,11 +91,10 @@ nav a:hover {
 #mountain-bg {
   position: absolute;
   left: -10px;
-object-fit: cover;
+  object-fit: cover;
   height: 500px;
   width: 100vw;
   opacity: 0.3;
-
 }
 
 .home h1 {
@@ -216,14 +214,13 @@ object-fit: cover;
   width: 90vw;
   margin: auto;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 #details-bootcamp {
-  height: 200px;
   border-radius: 5px;
   width: 350px;
-  margin: 0 auto auto 2rem;
+  margin: auto;
   text-align: center;
 }
 
@@ -235,7 +232,6 @@ object-fit: cover;
 
 #details-bootcamp p {
   color: white;
-  margin: auto;
   padding: 1rem;
   font-weight: 400;
 }
@@ -334,7 +330,7 @@ object-fit: cover;
 }
 
 .modal {
-  height: 450px;
+  height: 220px;
   width: 400px;
   position: sticky;
   margin: auto;
@@ -353,13 +349,21 @@ object-fit: cover;
 
 .modal-header span {
   color: white;
-  font-size: 1rem;
+  font-size: 1.5em;
+  position: relative;
+  right: 15px;
 }
+
+.modal-header span:hover {
+  color: white;
+}
+
 
 .modal p {
   margin-top: 1rem;
   color: darkgray;
-  padding: 0 1rem;
+  padding: 1rem;
+  height: 50px;
 }
 
 .cta-div {
@@ -370,9 +374,11 @@ object-fit: cover;
   background-color: rgb(255, 149, 149);
   opacity: 1;
   color: white;
-  padding: 0.5rem;
-  border-radius: 2px;
-  margin: 5px;
+  padding: 0.7rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 10px;
 }
 
 .cta-div a:hover {
@@ -421,9 +427,8 @@ object-fit: cover;
 }
 
 .accordion:hover {
-  opacity: 0.5;
+  opacity: 0.9;
 }
-
 
 .panel {
   display: none;
@@ -531,23 +536,28 @@ footer {
   bottom: 0;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   * {
     font-size: 14px;
   }
 
   .heart-div {
-  width: 270px;
-}
+    width: 270px;
+  }
 
   #bootcamp-div2 {
     display: flex;
+    align-items: center;
     max-width: 800px;
-    height: 300px;
+    margin: 2rem auto;
   }
 
   #details-bootcamp {
     display: flex;
     justify-content: center;
+  }
+
+  #details-bootcamp {
+    height: auto;
   }
 }
