@@ -15,6 +15,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  letter-spacing: 0.1rem;
 }
 
 body {
@@ -61,6 +62,7 @@ nav {
 nav a {
   position: absolute;
   right: 1rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 nav a:hover {
   text-decoration: none;
@@ -94,7 +96,7 @@ nav a:hover {
   object-fit: cover;
   height: 500px;
   width: 100vw;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .home h1 {
@@ -188,58 +190,101 @@ nav a:hover {
   background-color: var(--dark-pink);
 }
 
-#mycarousel {
-  width: 80vw;
-  max-width: 650px;
+#presentation {
+  width: 90vw;
+}
+
+#presentation2 {
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
   margin: auto;
 }
 
-.carousel-item {
-  padding: 2rem 5rem;
-  height: 250px;
+#presentation img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-position: 0px -30px;
+  object-fit: cover;
+  margin-bottom: 2rem;
 }
 
-.carousel-item h2 {
-  margin-top: 2rem;
-  font-size: 1.3rem;
+#presentation {
+  width: 80vw;
+  max-width: 750px;
+  margin: auto;
 }
 
-/* ----- SECTION : BOOTCAMP ----- */
+/* ----- SECTION : FORMATION ----- */
 
-.bootcamp {
+.formation {
   background-color: var(--main-pink);
 }
 
-#bootcamp-div {
+#formations-div {
   width: 90vw;
   margin: auto;
   text-align: center;
-  padding: 1rem;
+  padding: 3rem;
 }
 
-#details-bootcamp {
-  border-radius: 5px;
-  width: 350px;
-  margin: auto;
-  text-align: center;
+#formation-div-2 {
+  padding: 2rem;
 }
 
-#img-bootcamp img {
-  border-radius: 5px;
-  width: auto;
-  max-height: 200px;
+#completed,
+#inProgress {
+  position: relative;
+  width: 80%;
+  margin: 2rem auto;
+  border-radius: 10px;
+  padding-bottom: 1rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--dark-pink);
 }
 
-#details-bootcamp p {
-  color: white;
-  padding: 1rem;
+#formation-div-2 h3 {
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  background-color: white;
+}
+
+#formation-div-2 i {
+  position: absolute;
+  right: 2rem;
+  font-size: 2rem;
+}
+
+#completed h3,
+#completed i {
+  color: rgb(135, 197, 93);
+}
+
+#inProgress h3,
+#inProgress i {
+  color: coral;
+}
+
+#formation-div-2 div a {
+  font-weight: 700;
+}
+
+#formation-div-2 p {
+  padding: 1.2rem;
+  margin: 0;
   font-weight: 400;
 }
 
-#details-bootcamp a {
-  text-decoration: none;
-  font-weight: 700;
-  color: var(--dark-pink);
+.strong-div {
+  padding-left: 1rem;
+}
+
+#formation-div-2 div a {
+  color: white;
 }
 
 /* ----- SECTION : PORTFOLIO ----- */
@@ -254,7 +299,7 @@ nav a:hover {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  z-index: 8;
   cursor: pointer;
 }
 
@@ -313,6 +358,10 @@ nav a:hover {
   background-image: url(../images/project-preview/tindog.png);
 }
 
+.travelApp {
+  background-image: url(../images/project-preview/travelApp.PNG);
+}
+
 .comingSoon {
   background-image: url(../images/project-preview/coming-soon-page.png);
 }
@@ -329,10 +378,16 @@ nav a:hover {
   background-image: url(../images/project-preview/sign-up-form.png);
 }
 
+.note-react {
+  background-image: url(../images/project-preview/keeperReact.png);
+}
+
 .modal {
-  height: 220px;
-  width: 400px;
   position: sticky;
+  width: 70vw;
+  min-width: 290px;
+  max-width: 500px;
+  height: 35vh;
   margin: auto;
   background-color: white;
   border-radius: 5px;
@@ -340,6 +395,7 @@ nav a:hover {
   color: darkgray;
   display: block;
   text-align: center;
+  z-index: 9;
 }
 
 .modal-header {
@@ -351,23 +407,28 @@ nav a:hover {
   color: white;
   font-size: 1.5em;
   position: relative;
-  right: 15px;
+  right: 2rem;
 }
 
 .modal-header span:hover {
   color: white;
 }
 
-
-.modal p {
-  margin-top: 1rem;
-  color: darkgray;
-  padding: 1rem;
-  height: 50px;
+.modal-content-1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.3rem;
 }
 
-.cta-div {
-  margin-top: 2rem;
+.modal p {
+  color: darkgray;
+  letter-spacing: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .cta-div a {
@@ -379,6 +440,7 @@ nav a:hover {
   font-size: 1.2rem;
   font-weight: 400;
   margin-left: 10px;
+  width: 30%;
 }
 
 .cta-div a:hover {
@@ -388,17 +450,11 @@ nav a:hover {
 }
 
 .stack-icon-div {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  right: 1rem;
-  text-align: center;
-}
-
-.stack-icon {
-  width: 1.5rem;
-  height: auto;
-  margin: 0.3rem;
+  height: 5rem;
+  padding: 1rem 20%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
 }
 
 /* ----- SECTION : FAQ ----- */
@@ -411,13 +467,21 @@ nav a:hover {
   padding-bottom: 2rem;
 }
 
-.dividers {
-  width: 80vw;
+#divider-main-div {
+  border-style: solid;
+  border-color: white;
+  width: 90vw;
   max-width: 500px;
-  margin: 1rem auto 0 auto;
+  margin: 2rem auto;
+  padding: 1.2rem;
+}
+
+.dividers {
+  margin: 1rem auto 1rem auto;
 }
 
 .accordion {
+  color: red;
   width: 100%;
   font-weight: 400;
   background-color: var(--main-pink);
@@ -434,6 +498,7 @@ nav a:hover {
   display: none;
   margin: 0;
   padding: 1rem;
+  font-weight: 400;
 }
 
 .is-visible {
@@ -483,22 +548,47 @@ footer {
 
 .fa-heart {
   color: red;
-  margin: 0 10px;
 }
 
-.about-me i {
-  margin: 0 50px;
+.sectionTitle .fa-heart {
+  position: absolute;
+  top: 1rem;
 }
 
-.bootcamp i {
-  margin: 0 20px;
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.sectionTitle {
+  margin: auto;
+  position: relative;
+}
+
+.about-me .sectionTitle {
+  width: 250px;
+}
+
+.formation .sectionTitle {
+  width: 200px;
+}
+
+.portfolio .sectionTitle {
+  width: 150px;
+}
+
+.FAQ .sectionTitle {
+  width: 100px;
 }
 
 .heart-div {
   position: relative;
   height: 40px;
   width: 240px;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 1.5rem auto;
 }
 .heart i {
   margin: 0;
@@ -545,19 +635,45 @@ footer {
     width: 270px;
   }
 
-  #bootcamp-div2 {
-    display: flex;
-    align-items: center;
-    max-width: 800px;
-    margin: 2rem auto;
+  .sectionTitle .fa-heart {
+    top: 1.2rem;
   }
 
-  #details-bootcamp {
+  .about-me .sectionTitle {
+    width: 280px;
+  }
+
+  .formation .sectionTitle {
+    width: 250px;
+  }
+
+  .portfolio .sectionTitle {
+    width: 200px;
+  }
+
+  .FAQ .sectionTitle {
+    width: 120px;
+  }
+
+  #formation-div-2 {
     display: flex;
     justify-content: center;
   }
 
-  #details-bootcamp {
-    height: auto;
+  #completed,
+  #inProgress {
+    width: 50%;
+    max-width: 400px;
+    margin: 0 1rem;
+  }
+
+  #presentation2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #presentation2 p {
+    max-width: 500px;
   }
 }
